@@ -1,0 +1,10 @@
+{
+  "name": "algorithms-data-structure",
+  "version": "1.0.0",
+  "description": "Playing with data structures, algorithms",
+  "main": "index.js",
+  "repository": "https://github.com/diegofernandezfontana/algorithms-data-structure.git",
+  "author": "Diego <diego.fernandez@manomano.com>",
+  "license": "MIT",
+  "type": "module"
+}

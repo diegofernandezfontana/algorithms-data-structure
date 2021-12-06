@@ -11,12 +11,16 @@ function hashStringToInt(s = "", tableSize = 0) {
 }
 
 class HashTable {
-  data = new Array(11);
+  // Use prime numbers to have better distribution
+  // This implementation needs to have a resize method to extend current data.length
+
+  data = new Array(111);
 
   setItem(key, value) {
     const index = hashStringToInt(key, this.data.length);
+    // Would work great if linked list is used instead of array for insertion
+    // but would also need to update getItem -> find -> return value
 
-    // store arr [key, value]
     if (!this.data[index]) {
       this.data[index] = [[key, value]];
     } else {
